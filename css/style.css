@@ -9,7 +9,9 @@
   --card-bg-color: #ffffff;
 }
 
-/* Reset CSS */
+/*** 
+    Reset CSS 
+***/
 *,
 ::before,
 ::after {
@@ -18,7 +20,9 @@
   padding: 0;
 }
 
-/* Général */
+/*** 
+    Général 
+***/
 html {
   font-size: 62.5%;
   font-family: "Raleway", sans-serif;
@@ -43,8 +47,10 @@ button:hover {
   opacity: 0.8;
 }
 
-/* Classes communes */
-.fa-solid {
+/*** 
+    Classes communes 
+***/
+.icon {
   color: var(--main-color);
 }
 
@@ -64,7 +70,7 @@ button:hover {
   align-items: center;
 }
 
-.section-header .fa-solid {
+.section-header .icon {
   font-size: 1.8rem;
 }
 
@@ -102,6 +108,7 @@ button:hover {
 .card-body {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-text {
@@ -134,15 +141,16 @@ button:hover {
   height: 100%;
 }
 
-/* En-tête du site */
+/***
+    En-tête du site 
+***/
 .l-header {
   display: flex;
   justify-content: space-between;
-
-  height: 79px;
 }
 
 .brand {
+  display: flex;
   padding: 30px 50px;
 }
 
@@ -170,19 +178,20 @@ button:hover {
   color: var(--main-color);
 }
 
-/* Corp principal */
+/***
+    Corps principal 
+***/
 .l-main {
   display: flex;
   flex-flow: row wrap;
   gap: 35px 40px;
 
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 30px;
-  padding-bottom: 35px;
+  padding: 30px 50px 35px;
 }
 
-/* Section de recherche */
+/***
+    Section de recherche
+***/
 .search {
   flex-basis: 100%;
 }
@@ -227,7 +236,7 @@ button:hover {
   border-bottom-left-radius: 15px;
 }
 
-.label-search .fa-solid {
+.label-search .icon {
   color: black;
 }
 
@@ -251,7 +260,7 @@ button:hover {
   display: none;
 }
 
-.button-search .fa-solid {
+.button-search-icon .icon {
   color: white;
 }
 
@@ -297,8 +306,8 @@ button:hover {
   padding: 4px 19px;
 }
 
-.label-filter .fa-solid {
-  font-size: 2rem;
+.label-filter .icon {
+  font-size: 1.2em;
 }
 
 .label-filter:hover,
@@ -325,16 +334,23 @@ button:hover {
   height: 24px;
 }
 
-/* Section: Hébergements & Populaires */
+/***
+    Section: Hébergements & Populaires 
+***/
 .offers-main,
 .offers-sponsored {
+  --space-between-card: 10px;
+  --space-around: 30px;
+
+  flex: 1;
+
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: var(--space-between-card);
 
   background-color: var(--main-bg-color);
   border-radius: 15px;
-  padding: 30px;
+  padding: var(--space-around);
 }
 
 .offers-main {
@@ -342,7 +358,8 @@ button:hover {
 }
 
 .offers-main .card {
-  flex: 1 1 30%;
+  flex: 1 1
+    calc((100% - 2 * var(--space-between-card)) / 3 - 2 * var(--space-around));
 
   flex-direction: column;
   gap: 4px;
@@ -362,7 +379,6 @@ button:hover {
 
 .offers-main .card-body {
   gap: 8px;
-
   padding: 0 15px;
 }
 
@@ -376,16 +392,11 @@ button:hover {
 }
 
 .offers-sponsored {
-  flex-basis: 429px;
-}
-
-.offers-sponsored .cards {
-  flex-direction: column;
+  flex: 0 1 429px;
 }
 
 .offers-sponsored .card {
-  flex: 1;
-  flex-basis: 146px;
+  flex: auto;
 }
 
 .offers-sponsored .card-img {
@@ -399,7 +410,6 @@ button:hover {
 .offers-sponsored .card-body {
   flex: auto;
 
-  justify-content: space-between;
   gap: 5px;
 
   padding: 10px 5px 5px 15px;
@@ -422,14 +432,14 @@ button:hover {
 
 .activities .cards {
   display: flex;
-  flex-flow: row nowrap;
+  flex-wrap: wrap;
 
   padding: 0;
 }
 
 .activities .card {
   flex-direction: column;
-  flex: 1 0 0;
+  flex: 1;
 }
 
 .activities .card-img {
@@ -437,7 +447,7 @@ button:hover {
   align-self: stretch;
 
   width: 100%;
-  height: 380px;
+  aspect-ratio: 297/380;
 
   border: none;
   border-bottom-left-radius: 0;
@@ -491,11 +501,8 @@ button:hover {
     flex-basis: 100%;
   }
 
-  .offers-sponsored .cards {
-    flex-direction: row;
-  }
-
   .offers-sponsored .card {
+    flex: 1;
     height: 146px;
   }
 
@@ -504,12 +511,8 @@ button:hover {
     height: 100%;
   }
 
-  .activities .cards {
-    flex-wrap: wrap;
-  }
-
   .activities .card-img {
-    height: 200px;
+    aspect-ratio: 193/200;
   }
 }
 
@@ -598,7 +601,7 @@ button:hover {
     display: inline-block;
   }
 
-  .button-search-icon .fa-solid {
+  .button-search-icon .icon {
     color: white;
   }
 
@@ -638,8 +641,8 @@ button:hover {
     border-radius: 0;
   }
 
-  .offers-sponsored .cards {
-    flex-direction: column;
+  .offers-sponsored .card {
+    flex-basis: auto;
   }
 
   .offers-sponsored .card-img {
@@ -651,17 +654,12 @@ button:hover {
     padding: 30px;
   }
 
-  .activities .cards {
-    flex-direction: column;
-  }
-
   .activities .card {
-    height: auto;
     flex-basis: auto;
   }
 
   .activities .card-img {
-    height: 141px;
+    aspect-ratio: 315/141;
   }
 
   .l-footer {

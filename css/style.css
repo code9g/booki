@@ -361,7 +361,7 @@ button:hover {
   flex-direction: column;
   gap: 4px;
 
-  min-width: 200px;
+  min-width: 250px;
 
   padding-bottom: 15px;
 }
@@ -394,6 +394,7 @@ button:hover {
 
 .offers-sponsored .card {
   flex: auto;
+  min-width: 320px;
 }
 
 .offers-sponsored .card-img {
@@ -622,8 +623,14 @@ button:hover {
     border-radius: 0;
   }
 
+  .offers-main .card {
+    flex-basis: 100%;
+  }
+
   .offers-main .card-img {
-    height: 124px;
+    aspect-ratio: 335/124;
+    width: 100%;
+    height: auto;
   }
 
   .offers-sponsored {
@@ -633,7 +640,7 @@ button:hover {
   }
 
   .offers-sponsored .card {
-    flex-basis: auto;
+    flex-basis: 100%;
   }
 
   .offers-sponsored .card-img {

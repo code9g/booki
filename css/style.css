@@ -340,18 +340,15 @@ button:hover {
 ***/
 .offers-main,
 .offers-sponsored {
-  --space-between-card: 10px;
-  --space-around: 30px;
-
   flex: 1;
 
   display: flex;
   flex-direction: column;
-  gap: var(--space-between-card);
+  gap: 30px;
 
   background-color: var(--main-bg-color);
   border-radius: 15px;
-  padding: var(--space-around);
+  padding: 30px;
 }
 
 .offers-main {
@@ -359,8 +356,7 @@ button:hover {
 }
 
 .offers-main .card {
-  flex: 1 1
-    calc((100% - 2 * var(--space-between-card)) / 3 - 2 * var(--space-around));
+  flex: 1;
 
   flex-direction: column;
   gap: 4px;

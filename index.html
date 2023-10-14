@@ -18,7 +18,7 @@
 <body>
     <div class="main-container">
         <header class="l-header">
-            <div class="brand" href="#"><img class="logo" src="images/logo/Booki.png" alt="Logo Booki"></div>
+            <a class="brand" href="#"><img class="logo" src="images/logo/Booki.png" alt="Logo Booki"></a>
             <nav class="header-navbar">
                 <ul class="header-menu">
                     <li class="nav-item"><a class="nav-link" href="#offers-main">Hébergements</a></li>
@@ -27,7 +27,7 @@
             </nav>
         </header>
         <main class="l-main">
-            <section class="search" aria-role="search">
+            <section class="search" role="search">
                 <form class="form-search" action="?self" method="post">
                     <header class="form-header">
                         <h2 class="form-title">Trouvez votre hébergement pour des vacances de rêve</h2>
@@ -36,10 +36,11 @@
                     <div class="input-group">
                         <label class="label-search" for="search"><i class="icon fa-solid fa-location-dot"
                                 aria-hidden="true"></i></label>
-                        <input class="input-search" type="text" name="search" id="search-tex" value="Marseille, France"
+                        <input class="input-search" type="text" name="search" id="search" value="Marseille, France"
                             placeholder="Rechercher...">
-                        <button class="button-search" type="submit"><span class="button-search-icon"
-                                aria-hidden="true"><i class="icon fa-solid fa-search"></i></span><span
+                        <button class="button-search" type="submit" aria-label="Rechercher"><span
+                                class="button-search-icon" aria-hidden="true"><i
+                                    class="icon fa-solid fa-search"></i></span><span
                                 class="button-search-text">Rechercher</span></button>
                     </div>
                     <div class="filters">
@@ -79,7 +80,7 @@
                 </header>
                 <div class="cards">
                     <article class="card">
-                        <a class="stretched-link" href="#"></a>
+                        <a class="stretched-link" href="#" aria-label="Hébergement: Hôtel du port"></a>
                         <img class="card-img" src="images/hebergements/fred-kleber.jpg"
                             alt="Photo de la chambre de l'hôtel du port">
                         <div class="card-body">
@@ -98,7 +99,7 @@
                         </div>
                     </article>
                     <article class="card">
-                        <a class="stretched-link" href="#"></a>
+                        <a class="stretched-link" href="#" aria-label="Hébergement: Hôtel Chez Amina"></a>
                         <img class="card-img" src="images/hebergements/febrian-zakaria.jpg"
                             alt="Photo d'une chambre de l'hôtel Chez Amina">
                         <div class="card-body">
@@ -118,7 +119,7 @@
                         </div>
                     </article>
                     <article class="card">
-                        <a class="stretched-link" href="#"></a>
+                        <a class="stretched-link" href="#" aria-label="Hébergement: Hôtel les mouettes"></a>
                         <img class="card-img" src="images/hebergements/reisetopia.jpg"
                             alt="Photo d'une chambre de l'hôtel les mouettes">
                         <div class="card-body">
@@ -137,7 +138,7 @@
                         </div>
                     </article>
                     <article class="card">
-                        <a class="stretched-link" href="#"></a>
+                        <a class="stretched-link" href="#" aria-label="Hébergement: Hôtel de la mer"></a>
                         <img class="card-img" src="images/hebergements/annie-spratt.jpg"
                             alt="Photo d'une chambre de l'hôtel de la mer">
                         <div class="card-body">
@@ -156,7 +157,7 @@
                         </div>
                     </article>
                     <article class="card">
-                        <a class="stretched-link" href="#"></a>
+                        <a class="stretched-link" href="#" aria-label="Hébergement: Auberge La Canebière"></a>
                         <img class="card-img" src="images/hebergements/marcus-loke.jpg"
                             alt="Photo d'une chambre de l'auberge La Cannebière">
                         <div class="card-body">
@@ -175,7 +176,7 @@
                         </div>
                     </article>
                     <article class="card">
-                        <a class="stretched-link" href="#"></a>
+                        <a class="stretched-link" href="#" aria-label="Hébergement: Auberge le Panier"></a>
                         <img class="card-img" src="images/hebergements/nicate-lee.jpg"
                             alt="Photo d'une chambre de l'auberge Le Panier">
                         <div class="card-body">
@@ -203,7 +204,7 @@
                 </header>
                 <div class="cards">
                     <article class="card">
-                        <a href="#" class="stretched-link"></a>
+                        <a href="#" class="stretched-link" aria-label="Populaire: Auberge La Canebière"></a>
                         <img src="images/hebergements/emile-guillemot.jpg"
                             alt="Photo d'une chambre de l'auberge La Cannebière" class="card-img">
                         <div class="card-body">
@@ -222,7 +223,8 @@
                         </div>
                     </article>
                     <article class="card">
-                        <a href="#" class="stretched-link"></a>
+                        <a href="#" class="stretched-link"
+                            aria-label="Populaire: Chambres d'hôtels Au coeur de l'eau"></a>
                         <img src="images/hebergements/aw-creative.jpg"
                             alt="Photo d'une chambre des chambres d'hôtes Au coeur de l'eau" class="card-img">
                         <div class="card-body">
@@ -241,7 +243,7 @@
                         </div>
                     </article>
                     <article class="card">
-                        <a href="#" class="stretched-link"></a>
+                        <a href="#" class="stretched-link" aria-label="Populaire: Hôtel Bleu et Blanc"></a>
                         <img src="images/hebergements/febrian-zakaria2.jpg"
                             alt="Photo d'une chambre de l'hôtel Bleu et Blanc" class="card-img">
                         <div class="card-body">
@@ -267,7 +269,7 @@
                 </header>
                 <div class="cards">
                     <article class="card">
-                        <a href="#" class="stretched-link"></a>
+                        <a href="#" class="stretched-link" aria-label="Activité: Vieux-Port"></a>
                         <img src="images/activites/reno-laithienne.jpg" alt="Photo du Vieux-Port" class="card-img">
                         <div class="card-body">
                             <div class="card-text">
@@ -276,7 +278,7 @@
                         </div>
                     </article>
                     <article class="card">
-                        <a href="#" class="stretched-link"></a>
+                        <a href="#" class="stretched-link" aria-label="Activité: Fort de Pomègues"></a>
                         <img src="images/activites/paul-hermann.jpg" alt="Photo du Fort de Pomègues" class="card-img">
                         <div class="card-body">
                             <div class="card-text">
@@ -285,7 +287,7 @@
                         </div>
                     </article>
                     <article class="card">
-                        <a href="#" class="stretched-link"></a>
+                        <a href="#" class="stretched-link" aria-label="Activité: Parc national des Calanques"></a>
                         <img src="images/activites/kilyan-sockalingum.jpg" alt="Photo du Parc national des Calanques"
                             class="card-img">
                         <div class="card-body">
@@ -295,7 +297,7 @@
                         </div>
                     </article>
                     <article class="card">
-                        <a href="#" class="stretched-link"></a>
+                        <a href="#" class="stretched-link" aria-label="Activité: Notre-Dame-de-la-Garde"></a>
                         <img src="images/activites/florian-wehde.jpg" alt="Photo de Notre-Dame-de-la-Garde"
                             class="card-img">
                         <div class="card-body">

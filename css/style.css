@@ -499,6 +499,7 @@ button:hover {
   .offers-sponsored .card {
     flex: 1;
     height: 146px;
+    min-width: auto;
   }
 
   .offers-sponsored .card-img {
@@ -646,6 +647,7 @@ button:hover {
 
   .offers-sponsored .card {
     flex-basis: 100%;
+    min-width: auto;
   }
 
   .offers-sponsored .card-img {

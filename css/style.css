@@ -448,7 +448,10 @@ button:hover {
 }
 
 .activities .card-body {
+  flex-basis: 100%;
   padding: 20px 19px;
+  display: flex;
+  justify-content: center;
 }
 
 /*** 

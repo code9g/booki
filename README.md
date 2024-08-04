@@ -1,6 +1,24 @@
 # booki
 
-Projet 2 du parcours "**Développeur d'application - JavaScript React**" chez OpenClassRooms
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+Projet 2 du parcours "**Développeur d'application - JavaScript React**" chez [OpenClassroom](https://openclassrooms.com/fr/).
+
+![home](./images/home.png)
+
+Créez la page d’accueil d’une agence de voyage avec HTML & CSS.
+
+# Description
+
+Vous débutez votre alternance en tant que développeur web au sein de la start-up Booki.
+
+L’entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.
+
+Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS. Pour cela, vous travaillez en étroite collaboration avec Sarah, la CTO, et Loïc, l’UI designer.
+
+## Objectifs
 
 L'objectif est d'intégrer une maquette depuis Figma, aussi bien en version bureau, tablette que mobile.
 
@@ -109,3 +127,10 @@ Il faudra tester la page web sur ces deux navigateurs.
 Aucun **framework CSS** (type BootStrap ou Tailwind CSS) ou **préprocesseur CSS** (type Sass
 ou Less) ne doit être utilisé.
 Aucun autre **langage** ne doit être utilisé (comme JavaScript, par exemple).
+
+## Tester
+
+Vous trouverez le lien pour tester l'application [ici](https://code9g.github.io/booki/)
+
+[![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](<[http://](https://github.com/code9g/)>)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pierre-andre-henry/)
